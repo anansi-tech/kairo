@@ -20,19 +20,19 @@ export default function Home() {
           }}
         />
         <div className="relative max-w-[960px] mx-auto text-center">
-          <p className="text-[11px] tracking-[0.3em] uppercase text-anansi-bronze font-semibold mb-7">
+          <p className="text-[11px] tracking-[0.3em] uppercase text-anansi-bronze font-semibold mb-7 animate-fade-up animate-fade-up-delay-1">
             Kairo by Anansi · Executive AI Education
           </p>
-          <h1 className="font-display text-[clamp(44px,7vw,86px)] leading-[1.02] text-anansi-espresso">
+          <h1 className="font-display text-[clamp(44px,7vw,86px)] leading-[1.02] text-anansi-espresso animate-fade-up animate-fade-up-delay-1">
             Stop reading about AI.
             <br />
             <span className="italic text-anansi-bronze">Start using it.</span>
           </h1>
-          <p className="mt-8 text-[17px] sm:text-[19px] text-anansi-espresso/75 leading-[1.6] max-w-[680px] mx-auto">
+          <p className="mt-8 text-[17px] sm:text-[19px] text-anansi-espresso/75 leading-[1.6] max-w-[680px] mx-auto animate-fade-up animate-fade-up-delay-2">
             A 2-day hands-on workshop for working professionals. Open your laptop, learn from
             someone who actually builds with AI, leave with working tools in your real job by Monday morning.
           </p>
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animate-fade-up-delay-3">
             <a
               href="#cta"
               className="inline-flex items-center gap-2 px-8 py-4 bg-anansi-bronze text-anansi-cream
@@ -57,7 +57,7 @@ export default function Home() {
         id="what-you-learn"
         className="py-24 md:py-28 px-6 md:px-12 border-t border-anansi-espresso/10"
       >
-        <div className="max-w-[1200px] mx-auto">
+        <div className="max-w-[1200px] mx-auto reveal">
           <Eyebrow>What you learn</Eyebrow>
           <h2 className="font-display text-[clamp(32px,4.5vw,56px)] leading-[1.1] text-anansi-espresso max-w-[700px]">
             Two days. <span className="italic text-anansi-bronze">Real tools, real work.</span>
@@ -94,7 +94,7 @@ export default function Home() {
         id="who-its-for"
         className="py-24 md:py-28 px-6 md:px-12 border-t border-anansi-espresso/10 bg-anansi-cream"
       >
-        <div className="max-w-[1200px] mx-auto">
+        <div className="max-w-[1200px] mx-auto reveal">
           <Eyebrow>Who it's for</Eyebrow>
           <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.15] text-anansi-espresso max-w-[820px]">
             Working professionals who&apos;ve heard about AI everywhere — and are quietly worried
@@ -125,7 +125,7 @@ export default function Home() {
 
       {/* ===== WHAT MAKES IT DIFFERENT ===== */}
       <section className="py-24 md:py-28 px-6 md:px-12 border-t border-anansi-espresso/10">
-        <div className="max-w-[1200px] mx-auto">
+        <div className="max-w-[1200px] mx-auto reveal">
           <Eyebrow>What makes it different</Eyebrow>
           <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.15] text-anansi-espresso max-w-[760px]">
             Not another deck. Not another &ldquo;framework.&rdquo;
@@ -159,7 +159,7 @@ export default function Home() {
 
       {/* ===== FORMAT & PRICING ===== */}
       <section className="py-24 md:py-28 px-6 md:px-12 border-t border-anansi-espresso/10 bg-anansi-espresso text-anansi-cream">
-        <div className="max-w-[1200px] mx-auto">
+        <div className="max-w-[1200px] mx-auto reveal">
           <div className="flex items-center gap-3 mb-7">
             <span className="block w-8 h-px bg-anansi-gold" />
             <p className="text-[10px] tracking-[0.25em] uppercase text-anansi-gold font-semibold">
@@ -190,7 +190,7 @@ export default function Home() {
         id="about"
         className="py-24 md:py-28 px-6 md:px-12 border-t border-anansi-espresso/10"
       >
-        <div className="max-w-[1200px] mx-auto grid md:grid-cols-[280px_minmax(0,1fr)] gap-12 md:gap-16 items-start">
+        <div className="max-w-[1200px] mx-auto grid md:grid-cols-[280px_minmax(0,1fr)] gap-12 md:gap-16 items-start reveal">
           <div className="flex flex-col items-center md:items-start">
             <div className="w-[200px] h-[200px] md:w-[240px] md:h-[240px] rounded-full bg-anansi-cream border-2 border-anansi-gold shadow-[0_24px_48px_rgba(42,26,18,0.18)] flex items-center justify-center">
               {/* TODO: replace with David's headshot when provided. */}
@@ -239,7 +239,7 @@ export default function Home() {
               "radial-gradient(ellipse 50% 60% at 50% 50%, rgba(184,116,40,0.10), transparent 70%)",
           }}
         />
-        <div className="max-w-[760px] mx-auto text-center relative">
+        <div className="max-w-[760px] mx-auto text-center relative reveal">
           <Eyebrow center>Next cohort</Eyebrow>
           <h2 className="font-display text-[clamp(32px,4.5vw,56px)] leading-[1.1] text-anansi-espresso">
             Get notified when the next cohort opens.

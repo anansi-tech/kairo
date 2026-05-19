@@ -27,8 +27,8 @@ export default function Header() {
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-5 md:px-12 flex items-center justify-between gap-6">
-        <a href="#top" className="font-display text-[22px] md:text-[24px] text-anansi-espresso tracking-tight">
-          K<span className="text-anansi-gold">[AI]</span>RO
+        <a href="#top" className="kairo-wordmark font-display text-[22px] md:text-[24px] text-anansi-espresso">
+          K<span className="kairo-ai text-anansi-gold">[AI]</span>RO
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
