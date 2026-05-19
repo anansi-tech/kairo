@@ -2,14 +2,46 @@
 
 import { useState } from "react";
 
-// TODO(Task 4): Swap this stub for a real mailto handler or Tally embed.
+// Email capture for the Kairo cohort interest list.
+//
+// v1 uses a mailto: handoff: submit opens the user's default mail client with
+// a pre-filled message to david@anansi.xyz. Zero backend, ships day one.
+//
+// TODO: swap this for a Tally embed when one is set up. Create a "Kairo Cohort
+// Interest" form at tally.so (fields: name, email, job title, company, role,
+// anything else), then replace the body of this component with their embed
+// snippet. The visual register (input + bronze button) should stay the same.
+const CONTACT_EMAIL = "david@anansi.xyz";
+
 export default function EmailCapture() {
   const [email, setEmail] = useState("");
+  const [sent, setSent] = useState(false);
 
   const onSubmit = (e) => {
     e.preventDefault();
-    // wired in Task 4
+    const subject = "Kairo cohort interest";
+    const body = `Hi David,\n\nI'd like to be notified when the next Kairo cohort opens.\n\nEmail: ${email}\n\nA little about me / my role:\n`;
+    const href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = href;
+    setSent(true);
   };
+
+  if (sent) {
+    return (
+      <div className="mt-10 max-w-[560px] mx-auto px-6 py-5 border border-anansi-bronze/40 bg-anansi-bronze/8 rounded-sm text-center">
+        <p className="text-[14px] text-anansi-espresso/85 leading-[1.6]">
+          Your mail client should have opened. If it didn&apos;t, email{" "}
+          <a
+            href={`mailto:${CONTACT_EMAIL}?subject=Kairo%20cohort%20interest`}
+            className="text-anansi-bronze underline underline-offset-2 hover:text-anansi-espresso"
+          >
+            {CONTACT_EMAIL}
+          </a>{" "}
+          directly and we&apos;ll add you to the list.
+        </p>
+      </div>
+    );
+  }
 
   return (
     <form
