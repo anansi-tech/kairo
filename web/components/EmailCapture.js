@@ -28,12 +28,12 @@ export default function EmailCapture() {
 
   if (sent) {
     return (
-      <div className="mt-10 max-w-[560px] mx-auto px-6 py-5 border border-anansi-bronze/40 bg-anansi-bronze/8 rounded-sm text-center">
-        <p className="text-[14px] text-anansi-espresso/85 leading-[1.6]">
+      <div className="mt-10 max-w-[560px] mx-auto px-6 py-5 border border-kairo-bronze/40 bg-kairo-bronze/8 rounded-sm text-center">
+        <p className="text-[14px] text-kairo-navy/85 leading-[1.6]">
           Your mail client should have opened. If it didn&apos;t, email{" "}
           <a
             href={`mailto:${CONTACT_EMAIL}?subject=Kairo%20cohort%20interest`}
-            className="text-anansi-bronze underline underline-offset-2 hover:text-anansi-espresso"
+            className="text-kairo-bronze underline underline-offset-2 hover:text-kairo-navy"
           >
             {CONTACT_EMAIL}
           </a>{" "}
@@ -54,15 +54,15 @@ export default function EmailCapture() {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="your@email.com"
-        className="flex-1 px-5 py-4 bg-anansi-cream border border-anansi-espresso/15
-                   text-anansi-espresso placeholder:text-anansi-espresso/40
-                   focus:outline-none focus:border-anansi-bronze rounded-sm"
+        className="flex-1 px-5 py-4 bg-kairo-paper border border-kairo-navy/15
+                   text-kairo-navy placeholder:text-kairo-navy/40
+                   focus:outline-none focus:border-kairo-bronze rounded-sm"
       />
       <button
         type="submit"
-        className="px-7 py-4 bg-anansi-bronze text-anansi-cream
+        className="px-7 py-4 bg-kairo-bronze text-kairo-paper
                    text-[12px] tracking-[0.12em] uppercase font-semibold rounded-sm
-                   hover:bg-anansi-espresso transition-colors whitespace-nowrap"
+                   hover:bg-kairo-navy transition-colors whitespace-nowrap"
       >
         Get notified →
       </button>

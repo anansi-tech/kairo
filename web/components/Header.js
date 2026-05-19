@@ -23,12 +23,12 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "py-3 backdrop-blur-xl bg-anansi-cream/90 border-b border-anansi-espresso/10" : "py-5"
+        scrolled ? "py-3 backdrop-blur-xl bg-kairo-paper/90 border-b border-kairo-navy/10" : "py-5"
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-5 md:px-12 flex items-center justify-between gap-6">
-        <a href="#top" className="kairo-wordmark font-display text-[22px] md:text-[24px] text-anansi-espresso">
-          K<span className="kairo-ai text-anansi-gold">[AI]</span>RO
+        <a href="#top" className="kairo-wordmark font-display text-[22px] md:text-[24px] text-kairo-navy">
+          K<span className="kairo-ai text-kairo-gold">[AI]</span>RO
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -36,7 +36,7 @@ export default function Header() {
             <a
               key={link.label}
               href={link.href}
-              className="text-[12px] tracking-[0.1em] uppercase text-anansi-espresso/70 hover:text-anansi-bronze transition-colors"
+              className="text-[12px] tracking-[0.1em] uppercase text-kairo-navy/70 hover:text-kairo-bronze transition-colors"
             >
               {link.label}
             </a>
@@ -44,15 +44,15 @@ export default function Header() {
           <a
             href="#cta"
             className="text-[12px] tracking-[0.1em] uppercase font-semibold px-5 py-2.5
-                       bg-anansi-bronze text-anansi-cream rounded-sm
-                       hover:bg-anansi-espresso transition-colors"
+                       bg-kairo-bronze text-kairo-paper rounded-sm
+                       hover:bg-kairo-navy transition-colors"
           >
             Get notified
           </a>
         </nav>
 
         <button
-          className="md:hidden text-anansi-espresso text-xl p-1.5"
+          className="md:hidden text-kairo-navy text-xl p-1.5"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -61,13 +61,13 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-anansi-cream/98 backdrop-blur-xl px-6 py-6 space-y-4 border-t border-anansi-espresso/10">
+        <div className="md:hidden bg-kairo-paper/98 backdrop-blur-xl px-6 py-6 space-y-4 border-t border-kairo-navy/10">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="block text-sm uppercase tracking-widest text-anansi-espresso/75"
+              className="block text-sm uppercase tracking-widest text-kairo-navy/75"
             >
               {link.label}
             </a>
@@ -76,7 +76,7 @@ export default function Header() {
             href="#cta"
             onClick={() => setMenuOpen(false)}
             className="block text-center text-sm uppercase tracking-widest py-3 rounded-sm
-                       bg-anansi-bronze text-anansi-cream"
+                       bg-kairo-bronze text-kairo-paper"
           >
             Get notified
           </a>

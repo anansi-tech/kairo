@@ -4,41 +4,34 @@
 
 html {
   scroll-behavior: smooth;
-  background: #f5eedc;
+  background: #f7f4ee;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Layered cream background:
-     1) warm radial highlight from top
-     2) faint bronze wash at bottom
-     3) subtle paper grain from inline SVG
-     4) flat cream fallback
-     Effect: cream that feels like paper, not flat color. */
-  background-color: #f5eedc;
+  /* Layered paper background — warm-cool balance with subtle bronze
+     accent and a hint of navy in the lower wash */
+  background-color: #f7f4ee;
   background-image:
     radial-gradient(
       ellipse 70% 30% at 50% 0%,
-      rgba(214, 155, 50, 0.10),
-      rgba(214, 155, 50, 0.03) 38%,
+      rgba(184, 116, 40, 0.08),
+      rgba(184, 116, 40, 0.02) 38%,
       transparent 72%
     ),
-    radial-gradient(ellipse 100% 50% at 50% 100%, rgba(184, 116, 40, 0.05), transparent 70%),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.16  0 0 0 0 0.10  0 0 0 0 0.07  0 0 0 0.045 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    radial-gradient(ellipse 100% 50% at 50% 100%, rgba(15, 39, 66, 0.04), transparent 70%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.06  0 0 0 0 0.15  0 0 0 0 0.26  0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-attachment: fixed, fixed, fixed;
-  background-size:
-    100% 100%,
-    100% 100%,
-    240px 240px;
+  background-size: 100% 100%, 100% 100%, 240px 240px;
   background-repeat: no-repeat, no-repeat, repeat;
-  color: #2a1a12;
+  color: #0F2742;
 }
 
 ::selection {
   background-color: #b87428;
-  color: #f5eedc;
+  color: #f7f4ee;
 }
 
 /* ===== Scroll reveal ===== */
