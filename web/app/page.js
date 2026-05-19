@@ -212,10 +212,10 @@ export default function Home() {
           <div>
             <Eyebrow>About David</Eyebrow>
             <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.15] text-kairo-navy">
-              David Noel
+              Dr. David Noel
             </h2>
             <p className="mt-5 text-[16px] text-kairo-navy/80 leading-[1.8]">
-              David Noel is the founder of Anansi Technology LLC, an AI-first technology company
+              Dr. David Noel is the founder of Anansi Technology LLC, an AI-first technology company
               building products at the intersection of AI and financial infrastructure. He is a
               Senior Cybersecurity Engineer at American Express, where he leads enterprise AI
               safety initiatives including production LLM-as-judge classifiers, prompt injection

@@ -20,11 +20,11 @@ const body = DM_Sans({
 export const metadata = {
   title: "Kairo by Anansi — Executive AI Education",
   description:
-    "A 2-day hands-on workshop for working professionals. Open your laptop, learn from a builder, leave with working AI in your real job by Monday morning.",
+    "Hands-on AI workshops for working professionals, taught by Dr. David Noel (Anansi founder, Senior Cybersecurity Engineer at American Express, CS adjunct at Nova Southeastern). 2 days. 15 seats. Real tools in your real job.",
   openGraph: {
     title: "Kairo by Anansi — Executive AI Education",
     description:
-      "A 2-day hands-on workshop for working professionals. Open your laptop, learn from a builder, leave with working AI in your real job by Monday morning.",
+      "Hands-on AI workshops for working professionals, taught by Dr. David Noel (Anansi founder, Senior Cybersecurity Engineer at American Express, CS adjunct at Nova Southeastern). 2 days. 15 seats. Real tools in your real job.",
     url: "https://kairo.anansi.xyz",
     siteName: "Kairo by Anansi",
     type: "website",
