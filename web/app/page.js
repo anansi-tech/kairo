@@ -174,14 +174,20 @@ export default function Home() {
             <Stat label="Duration" value="2 days" sub="intensive" />
             <Stat label="Cohort size" value="15" sub="seats max" />
             <Stat label="Location" value="Miami" sub="venue at registration" />
-            <Stat label="Format" value="In-person" sub="hybrid available" />
+            <Stat label="Format" value="2-day intensive" sub="Miami in-person + virtual cohorts" />
           </div>
 
           <div className="mt-10 md:mt-12 grid sm:grid-cols-3 gap-5 md:gap-6">
             <PriceTile primary="$3,000" label="per seat · in-person" />
-            <PriceTile primary="$1,500" label="hybrid · 5-week cohort+coaching" />
+            <PriceTile primary="$1,500" label="virtual · two 4-hr days, one week apart" />
             <PriceTile primary="from $30K" label="B2B engagements · private cohorts" />
           </div>
+
+          <p className="mt-8 text-sm text-anansi-bronze/85 max-w-[640px] mx-auto leading-[1.6] text-center">
+            Two-day virtual cohorts run as two 4-hour sessions one week apart — humane pacing
+            that protects momentum without consuming your week. Same curriculum as in-person,
+            adapted for remote delivery.
+          </p>
         </div>
       </section>
 
