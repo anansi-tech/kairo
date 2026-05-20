@@ -16,7 +16,7 @@ export default function Home() {
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "radial-gradient(ellipse 60% 50% at 50% 30%, rgba(184,116,40,0.10), transparent 70%)",
+              "radial-gradient(ellipse 60% 50% at 50% 30%, rgba(122,15,20,0.07), transparent 70%)",
           }}
         />
         <div className="relative max-w-[960px] mx-auto text-center">
@@ -242,7 +242,7 @@ export default function Home() {
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "radial-gradient(ellipse 50% 60% at 50% 50%, rgba(184,116,40,0.10), transparent 70%)",
+              "radial-gradient(ellipse 50% 60% at 50% 50%, rgba(122,15,20,0.07), transparent 70%)",
           }}
         />
         <div className="max-w-[760px] mx-auto text-center relative reveal">
