@@ -149,9 +149,10 @@ export default function Home() {
               teaches the workshop is shipping AI to production every day. The curriculum is
               current because the practice is current.
             </Moat>
-            <Moat title="Academic credibility">
-              CS adjunct at Nova Southeastern University, PhD dissertation committee member. Real
-              teaching, real students, real research oversight.
+            <Moat title="Credentialed and current">
+              David holds a PhD in Computer Science and is an Adjunct Professor at Nova Southeastern
+              University — and a working AI safety engineer shipping production systems every day.
+              Real teaching, real research, real practice.
             </Moat>
           </div>
         </div>
@@ -205,29 +206,44 @@ export default function Home() {
               </span>
             </div>
             <p className="mt-5 text-[12px] tracking-[0.18em] uppercase text-kairo-black/60">
-              Your instructor
+              Dr. David Noel · PhD
             </p>
           </div>
 
           <div>
-            <Eyebrow>About David</Eyebrow>
+            <Eyebrow>The instructor</Eyebrow>
             <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.15] text-kairo-black">
               Dr. David Noel
             </h2>
-            <p className="mt-5 text-[16px] text-kairo-black/80 leading-[1.8]">
-              Dr. David Noel is the founder of Anansi Technology LLC, an AI-first technology company
-              building products at the intersection of AI and financial infrastructure. He is a
-              Senior Cybersecurity Engineer at American Express, where he leads enterprise AI
-              safety initiatives including production LLM-as-judge classifiers, prompt injection
-              detection systems, and AI vulnerability assessment frameworks. He is an adjunct
-              professor of computer science at Nova Southeastern University and serves on PhD
-              dissertation committees for AI-related research.
+            <p className="mt-3 text-[14px] tracking-[0.04em] text-kairo-red font-semibold uppercase">
+              PhD, Computer Science · Adjunct Professor · Founder, Anansi
+            </p>
+            <p className="mt-6 text-[16px] text-kairo-black/80 leading-[1.8]">
+              David holds a PhD in Computer Science and is an Adjunct Professor of Computer Science
+              at Nova Southeastern University, where he teaches AI and serves on dissertation
+              committees for AI-focused doctoral research. He is the founder of Anansi Technology LLC,
+              an AI-first technology company building at the intersection of AI and financial
+              infrastructure.
             </p>
             <p className="mt-5 text-[16px] text-kairo-black/80 leading-[1.8]">
-              Before Anansi, David was a software engineer at Schlumberger and American Express. He
-              is a builder first and a teacher second — Kairo exists because the people he teaches
-              in his university classes kept asking how to apply AI to their actual jobs, and most
-              existing programs weren&apos;t answering that question.
+              In his day job, David is a Senior Cybersecurity Engineer at American Express, where he
+              leads enterprise AI safety — building production LLM-as-judge classifiers, prompt-injection
+              detection systems, and AI vulnerability assessment frameworks that protect tens of
+              thousands of colleagues across the firm&apos;s AI tools. His evaluations directly inform
+              which AI systems the enterprise trusts in production.
+            </p>
+            <p className="mt-5 text-[16px] text-kairo-black/80 leading-[1.8]">
+              His path to AI ran through hardware. David began his career as a chip design engineer
+              at Intel, building the silicon that computing runs on, before moving into software and
+              financial technology. That full-stack perspective — from transistors to large language
+              models — is what makes his teaching different: he doesn&apos;t just show you which buttons
+              to press, he explains what&apos;s actually happening underneath.
+            </p>
+            <p className="mt-5 text-[16px] text-kairo-black/80 leading-[1.8]">
+              David is a builder first and a teacher second. Kairo exists because the professionals he
+              meets — in his classroom, at work, in his network — keep asking the same question: not
+              &ldquo;what is AI,&rdquo; but &ldquo;how do I actually use it in my job?&rdquo; Most programs
+              don&apos;t answer that. Kairo does.
             </p>
           </div>
         </div>
