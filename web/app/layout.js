@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${display.variable} ${body.variable} bg-kairo-paper text-kairo-navy font-body min-h-screen flex flex-col`}
+        className={`${display.variable} ${body.variable} bg-kairo-cream text-kairo-black font-body min-h-screen flex flex-col`}
       >
         <Header />
         <main className="flex-1">{children}</main>

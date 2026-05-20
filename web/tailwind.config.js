@@ -5,18 +5,17 @@ module.exports = {
     extend: {
       colors: {
         kairo: {
-          // Primary anchors — Kairo's distinctive palette
-          navy: "#0F2742",         // primary text + dark surfaces; reads decisive, professional
-          "navy-soft": "#1A3A5C",  // hover states, secondary dark surfaces
-          bronze: "#B87428",       // primary accent — connective thread back to Anansi family
-          copper: "#C68842",       // hover/lighter bronze for accents
-          gold: "#D69B32",         // brightest accent — sparingly, for K[AI]RO bracket emphasis
-          // Surfaces
-          paper: "#F7F4EE",        // primary background — slightly warmer than pure white, less yellow than Spice cream
-          mist:  "#E8EBF0",        // section variation — cool light blue-gray, hints at navy
-          ink:   "#0F2742",        // body text alias (same as navy)
-          muted: "#5C6B7E",        // secondary text — cool gray with navy undertone
-          border: "#D4D9E1",       // dividers, borders
+          // Aligned with Anansi family. Kairo inherits Anansi's primary palette
+          // (black + cream + red) for brand consistency. Gold is reserved for
+          // one specific job: the [AI] bracket in the K[AI]RO wordmark.
+          black:  "#0E0E0E",      // primary text, dark surfaces (matches anansi-black)
+          cream:  "#FAFAF5",      // primary background (matches anansi-cream)
+          red:    "#7A0F14",      // primary accent: CTAs, links, hover (matches anansi-red, oxblood)
+          "red-light": "#9A1F24", // hover state for red CTAs
+          gold:   "#D69B32",      // RESERVED for [AI] bracket in wordmark only
+          // Subtle neutrals (kept narrow on purpose)
+          muted:  "#6B6B6B",      // secondary text (matches anansi-gray)
+          border: "#E2E0DB",      // dividers, input borders (matches anansi-border)
         },
       },
       fontFamily: {
