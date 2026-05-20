@@ -161,13 +161,13 @@ export default function Home() {
       <section className="py-24 md:py-28 px-6 md:px-12 border-t border-kairo-black/10 bg-kairo-black text-kairo-cream">
         <div className="max-w-[1200px] mx-auto reveal">
           <div className="flex items-center gap-3 mb-7">
-            <span className="block w-8 h-px bg-kairo-red" />
-            <p className="text-[10px] tracking-[0.25em] uppercase text-kairo-red font-semibold">
+            <span className="block w-8 h-px bg-kairo-gold" />
+            <p className="text-[10px] tracking-[0.25em] uppercase text-kairo-gold font-semibold">
               Format &amp; pricing
             </p>
           </div>
           <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.15] max-w-[700px]">
-            Small cohorts. <span className="italic text-kairo-red">Premium price.</span>
+            Small cohorts. <span className="italic text-kairo-gold">Premium price.</span>
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-kairo-cream/10 mt-14">
@@ -183,7 +183,7 @@ export default function Home() {
             <PriceTile primary="from $30K" label="B2B engagements · private cohorts" />
           </div>
 
-          <p className="mt-8 text-sm text-kairo-red/85 max-w-[640px] mx-auto leading-[1.6] text-center">
+          <p className="mt-8 text-sm text-kairo-cream/70 max-w-[640px] mx-auto leading-[1.6] text-center">
             Two-day virtual cohorts run as two 4-hour sessions one week apart — humane pacing
             that protects momentum without consuming your week. Same curriculum as in-person,
             adapted for remote delivery.
@@ -322,7 +322,7 @@ function Moat({ title, children }) {
 function Stat({ label, value, sub }) {
   return (
     <div className="bg-kairo-black p-6 md:p-7">
-      <p className="text-[10px] tracking-[0.18em] uppercase text-kairo-red/70 mb-3">{label}</p>
+      <p className="text-[10px] tracking-[0.18em] uppercase text-kairo-gold/80 mb-3">{label}</p>
       <p className="font-display text-[clamp(28px,3.4vw,40px)] leading-none text-kairo-cream">
         {value}
       </p>
@@ -334,7 +334,7 @@ function Stat({ label, value, sub }) {
 function PriceTile({ primary, label }) {
   return (
     <div className="border border-kairo-cream/15 px-6 py-6 rounded-sm">
-      <p className="font-display text-[28px] md:text-[32px] text-kairo-red leading-none">
+      <p className="font-display text-[28px] md:text-[32px] text-kairo-gold leading-none">
         {primary}
       </p>
       <p className="text-[12px] tracking-[0.08em] uppercase text-kairo-cream/70 mt-3">{label}</p>
