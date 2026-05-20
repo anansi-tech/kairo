@@ -9,7 +9,7 @@ module.exports = {
           // (black + cream + red) for brand consistency. Gold is reserved for
           // one specific job: the [AI] bracket in the K[AI]RO wordmark.
           black:  "#0E0E0E",      // primary text, dark surfaces (matches anansi-black)
-          cream:  "#FAFAF5",      // primary background (matches anansi-cream)
+          cream:  "#F8F8FF",      // ghostwhite — cooler, crisper than warm cream
           red:    "#7A0F14",      // primary accent: CTAs, links, hover (matches anansi-red, oxblood)
           "red-light": "#9A1F24", // hover state for red CTAs
           gold:   "#D69B32",      // RESERVED for [AI] bracket in wordmark only

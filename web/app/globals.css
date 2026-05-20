@@ -4,7 +4,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: #fafaf5;
+  background: #f8f8ff;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 
   /* Layered cream background — subtle warm wash + paper grain.
      Restrained: the brand carries through type and the red accent, not surface texture. */
-  background-color: #fafaf5;
+  background-color: #f8f8ff;
   background-image:
     radial-gradient(
       ellipse 70% 30% at 50% 0%,
@@ -30,7 +30,7 @@ body {
 
 ::selection {
   background-color: #7a0f14;
-  color: #fafaf5;
+  color: #f8f8ff;
 }
 
 /* ===== Scroll reveal ===== */
