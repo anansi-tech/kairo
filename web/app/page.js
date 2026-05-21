@@ -200,7 +200,7 @@ export default function Home() {
           <div className="flex flex-col items-center md:items-start">
             <div className="w-[200px] h-[200px] md:w-[240px] md:h-[240px] rounded-full overflow-hidden border-2 border-kairo-red shadow-[0_24px_48px_rgba(14,14,14,0.18)] relative">
               <Image
-                src="/profilepic5.jpg"
+                src="/profilepic8.jpg"
                 alt="Dr. David Noel"
                 fill
                 sizes="240px"
