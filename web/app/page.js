@@ -1,3 +1,4 @@
+import Image from "next/image";
 import EmailCapture from "../components/EmailCapture";
 
 // TODO: when a cohort date is confirmed, change CTA to "Reserve your seat — [date]" and
@@ -30,7 +31,8 @@ export default function Home() {
           </h1>
           <p className="mt-8 text-[17px] sm:text-[19px] text-kairo-black/75 leading-[1.6] max-w-[680px] mx-auto animate-fade-up animate-fade-up-delay-2">
             A 2-day hands-on workshop for working professionals. Open your laptop, learn from
-            someone who actually builds with AI, leave with working tools in your real job by Monday morning.
+            someone who actually builds with AI, leave with working tools in your real job by Monday
+            morning.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animate-fade-up-delay-3">
             <a
@@ -141,13 +143,13 @@ export default function Home() {
             </Moat>
             <Moat title="Hands-on, not lecture">
               Day 1 hour 1: laptops open. Every concept is followed by 15-20 minutes of &ldquo;now
-              try it in your context.&rdquo; You leave with working AI in your actual job, not
-              notes about working AI in someone else&apos;s case study.
+              try it in your context.&rdquo; You leave with working AI in your actual job, not notes
+              about working AI in someone else&apos;s case study.
             </Moat>
             <Moat title="Backed by a real company">
               Kairo is part of Anansi, an AI-first technology company. The same instructor who
-              teaches the workshop is shipping AI to production every day. The curriculum is
-              current because the practice is current.
+              teaches the workshop is shipping AI to production every day. The curriculum is current
+              because the practice is current.
             </Moat>
             <Moat title="Credentialed and current">
               David holds a PhD in Computer Science and is an Adjunct Professor at Nova Southeastern
@@ -185,27 +187,28 @@ export default function Home() {
           </div>
 
           <p className="mt-8 text-sm text-kairo-cream/70 max-w-[640px] mx-auto leading-[1.6] text-center">
-            Two-day virtual cohorts run as two 4-hour sessions one week apart — humane pacing
-            that protects momentum without consuming your week. Same curriculum as in-person,
-            adapted for remote delivery.
+            Two-day virtual cohorts run as two 4-hour sessions one week apart — humane pacing that
+            protects momentum without consuming your week. Same curriculum as in-person, adapted for
+            remote delivery.
           </p>
         </div>
       </section>
 
       {/* ===== INSTRUCTOR ===== */}
-      <section
-        id="about"
-        className="py-24 md:py-28 px-6 md:px-12 border-t border-kairo-black/10"
-      >
+      <section id="about" className="py-24 md:py-28 px-6 md:px-12 border-t border-kairo-black/10">
         <div className="max-w-[1200px] mx-auto grid md:grid-cols-[280px_minmax(0,1fr)] gap-12 md:gap-16 items-start reveal">
           <div className="flex flex-col items-center md:items-start">
-            <div className="w-[200px] h-[200px] md:w-[240px] md:h-[240px] rounded-full bg-kairo-cream border-2 border-kairo-red shadow-[0_24px_48px_rgba(14,14,14,0.18)] flex items-center justify-center">
-              {/* TODO: replace with David's headshot when provided. */}
-              <span className="font-display text-[64px] md:text-[80px] text-kairo-red leading-none">
-                DN
-              </span>
+            <div className="w-[200px] h-[200px] md:w-[240px] md:h-[240px] rounded-full overflow-hidden border-2 border-kairo-red shadow-[0_24px_48px_rgba(14,14,14,0.18)] relative">
+              <Image
+                src="/profilepic5.jpg"
+                alt="Dr. David Noel"
+                fill
+                sizes="240px"
+                className="object-cover object-top"
+                priority
+              />
             </div>
-            <p className="mt-5 text-[12px] tracking-[0.18em] uppercase text-kairo-black/60">
+            <p className="mt-5 w-[200px] md:w-[240px] text-center text-[12px] tracking-[0.18em] uppercase text-kairo-black/60">
               Dr. David Noel · PhD
             </p>
           </div>
@@ -219,31 +222,31 @@ export default function Home() {
               PhD, Computer Science · Adjunct Professor · Founder, Anansi
             </p>
             <p className="mt-6 text-[16px] text-kairo-black/80 leading-[1.8]">
-              David holds a PhD in Computer Science and is an Adjunct Professor of Computer Science
-              at Nova Southeastern University, where he teaches AI and serves on dissertation
-              committees for AI-focused doctoral research. He is the founder of Anansi Technology LLC,
-              an AI-first technology company building at the intersection of AI and financial
-              infrastructure.
+              David holds a PhD in Computer Science and is an Adjunct Professor at Nova Southeastern
+              University, where he teaches AI and serves on the university’s Computer Science
+              dissertation committee for AI-focused doctoral research. He is the founder of Anansi
+              Technology LLC, an AI-first technology company building at the intersection of AI and
+              financial infrastructure.
             </p>
             <p className="mt-5 text-[16px] text-kairo-black/80 leading-[1.8]">
               In his day job, David is a Senior Cybersecurity Engineer at American Express, where he
-              leads enterprise AI safety — building production LLM-as-judge classifiers, prompt-injection
-              detection systems, and AI vulnerability assessment frameworks that protect tens of
-              thousands of colleagues across the firm&apos;s AI tools. His evaluations directly inform
-              which AI systems the enterprise trusts in production.
+              leads enterprise AI safety — building production LLM-as-judge classifiers,
+              prompt-injection detection systems, and AI vulnerability assessment frameworks that
+              protect tens of thousands of colleagues across the firm&apos;s AI tools. His
+              evaluations directly inform which AI systems the enterprise trusts in production.
             </p>
             <p className="mt-5 text-[16px] text-kairo-black/80 leading-[1.8]">
               His path to AI ran through hardware. David began his career as a chip design engineer
               at Intel, building the silicon that computing runs on, before moving into software and
               financial technology. That full-stack perspective — from transistors to large language
-              models — is what makes his teaching different: he doesn&apos;t just show you which buttons
-              to press, he explains what&apos;s actually happening underneath.
+              models — is what makes his teaching different: he doesn&apos;t just show you which
+              buttons to press, he explains what&apos;s actually happening underneath.
             </p>
             <p className="mt-5 text-[16px] text-kairo-black/80 leading-[1.8]">
-              David is a builder first and a teacher second. Kairo exists because the professionals he
-              meets — in his classroom, at work, in his network — keep asking the same question: not
-              &ldquo;what is AI,&rdquo; but &ldquo;how do I actually use it in my job?&rdquo; Most programs
-              don&apos;t answer that. Kairo does.
+              David is a builder first and a teacher second. Kairo exists because the professionals
+              he meets — in his classroom, at work, in his network — keep asking the same question:
+              not &ldquo;what is AI,&rdquo; but &ldquo;how do I actually use it in my job?&rdquo;
+              Most programs don&apos;t answer that. Kairo does.
             </p>
           </div>
         </div>
@@ -291,9 +294,7 @@ function Eyebrow({ children, center }) {
 function DayCard({ num, title, items }) {
   return (
     <div className="border-t border-kairo-black/15 pt-7">
-      <p className="text-[11px] tracking-[0.2em] uppercase text-kairo-red font-semibold">
-        {num}
-      </p>
+      <p className="text-[11px] tracking-[0.2em] uppercase text-kairo-red font-semibold">{num}</p>
       <h3 className="font-display text-[26px] md:text-[30px] leading-[1.2] text-kairo-black mt-3">
         {title}
       </h3>
@@ -317,9 +318,7 @@ function Persona({ role, quote }) {
       <p className="text-[10px] tracking-[0.18em] uppercase text-kairo-red font-semibold mb-4">
         {role}
       </p>
-      <p className="text-[15px] text-kairo-black/85 leading-[1.65] italic">
-        &ldquo;{quote}&rdquo;
-      </p>
+      <p className="text-[15px] text-kairo-black/85 leading-[1.65] italic">&ldquo;{quote}&rdquo;</p>
     </div>
   );
 }
@@ -327,9 +326,7 @@ function Persona({ role, quote }) {
 function Moat({ title, children }) {
   return (
     <div>
-      <h3 className="font-display text-[22px] md:text-[24px] text-kairo-black italic">
-        {title}
-      </h3>
+      <h3 className="font-display text-[22px] md:text-[24px] text-kairo-black italic">{title}</h3>
       <p className="mt-3 text-[15px] text-kairo-black/80 leading-[1.75]">{children}</p>
     </div>
   );
