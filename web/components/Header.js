@@ -6,7 +6,6 @@ const navLinks = [
   { label: "What you learn", href: "#what-you-learn" },
   { label: "Who it's for", href: "#who-its-for" },
   { label: "About", href: "#about" },
-  { label: "Contact", href: "#cta" },
 ];
 
 export default function Header() {
@@ -36,7 +35,7 @@ export default function Header() {
             <a
               key={link.label}
               href={link.href}
-              className="text-[12px] tracking-[0.1em] uppercase text-kairo-black/70 hover:text-kairo-red transition-colors"
+              className="text-[12px] tracking-[0.1em] uppercase text-kairo-black/85 hover:text-kairo-red transition-colors"
             >
               {link.label}
             </a>
