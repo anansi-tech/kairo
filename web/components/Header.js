@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "What you learn", href: "#what-you-learn" },
@@ -26,8 +27,15 @@ export default function Header() {
       }`}
     >
       <div className="max-w-[1200px] mx-auto px-5 md:px-12 flex items-center justify-between gap-6">
-        <a href="#top" className="kairo-wordmark font-display text-[22px] md:text-[24px] text-kairo-black">
-          K<span className="kairo-ai text-kairo-gold">[AI]</span>RO
+        <a href="#top" className="flex items-center" aria-label="Kairo — home">
+          <Image
+            src="/brand/wordmark/wordmark-full-color-light.png"
+            alt="Kairo"
+            width={210}
+            height={30}
+            priority
+            className="h-[26px] md:h-[30px] w-auto"
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
