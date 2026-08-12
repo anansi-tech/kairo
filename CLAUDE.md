@@ -15,7 +15,7 @@ All commands run from `web/`:
 
 ```bash
 npm run dev    # dev server on port 3002
-npm run build  # production build (standalone output)
+npm run build  # production build (standalone output locally; skipped on Vercel, where it breaks the build)
 npm start      # serve production build on port 3002
 ```
 
