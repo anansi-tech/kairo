@@ -1,4 +1,4 @@
-import { DM_Sans, Instrument_Serif } from "next/font/google";
+import { DM_Sans, DM_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -15,6 +15,12 @@ const body = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--font-body",
+});
+
+const mono = DM_Mono({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-mono",
 });
 
 export const metadata = {
@@ -54,7 +60,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${display.variable} ${body.variable} bg-kairo-cream text-kairo-black font-body min-h-screen flex flex-col`}
+        className={`${display.variable} ${body.variable} ${mono.variable} bg-kairo-cream text-kairo-black font-body min-h-screen flex flex-col`}
       >
         <Header />
         <main className="flex-1">{children}</main>

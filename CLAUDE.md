@@ -43,18 +43,20 @@ The page is one long scroll with all sections in `app/page.js` — no routing.
 
 ## Design system
 
-Custom Tailwind palette (defined in `tailwind.config.js`):
+Custom Tailwind palette (defined in `tailwind.config.js`; `public/colors.json` is the brand source of truth). void_black / hunt_red / ash_white — one red, no gold:
 
 | Token | Hex | Use |
 |---|---|---|
-| `kairo-black` | `#0E0E0E` | Primary background |
-| `kairo-cream` | `#F8F8FF` | Primary text on dark |
-| `kairo-red` | `#7A0F14` | Accent sections, gradients |
-| `kairo-gold` | `#D69B32` | **Reserved exclusively for the [AI] bracket in the K[AI]RO wordmark** |
-| `kairo-muted` | `#6B6B6B` | Secondary text |
-| `kairo-border` | `#E2E0DB` | Dividers |
+| `kairo-black` | `#050505` | void_black — primary text, dark surfaces |
+| `kairo-red` | `#C1121F` | hunt_red — accent: CTAs, links, wordmark AI, all sections |
+| `kairo-red-deep` | `#9A0E18` | hover / pressed state for red CTAs |
+| `kairo-cream` | `#F7F7F2` | ash_white — primary background (token name kept as `cream`) |
+| `kairo-muted` | `#5C5C57` | Secondary text |
+| `kairo-border` | `#E3E3DC` | Dividers, input borders |
 
-Fonts: `font-display` = Instrument Serif, `font-sans` = DM Sans (both via Google Fonts CSS variables).
+Exactly three gradients exist on the page (body wash, hero, final CTA), defined as CSS custom properties in `globals.css`. Do not add more.
+
+Fonts: `font-display` = Instrument Serif, `font-body` = DM Sans, `font-mono` = DM Mono (all via `next/font/google` CSS variables in `layout.js`).
 
 ## External dependencies
 

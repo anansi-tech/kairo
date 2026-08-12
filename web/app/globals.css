@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* The only three gradients on the page (body, hero, final CTA), kept as custom
+   properties so a palette change can never desync them again. hunt_red = 193,18,31. */
+:root {
+  --wash-body: radial-gradient(
+    ellipse 70% 30% at 50% 0%,
+    rgba(193, 18, 31, 0.04),
+    rgba(193, 18, 31, 0.01) 38%,
+    transparent 72%
+  );
+  --wash-hero: radial-gradient(
+    ellipse 62% 52% at 24% 22%,
+    rgba(193, 18, 31, 0.075),
+    transparent 68%
+  );
+  --wash-cta: radial-gradient(
+    ellipse 50% 62% at 50% 46%,
+    rgba(193, 18, 31, 0.08),
+    transparent 68%
+  );
+}
+
 html {
   scroll-behavior: smooth;
   background: #f7f7f2;
@@ -11,21 +32,27 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* Layered ash_white background — subtle warm wash + paper grain.
-     Restrained: the brand carries through type and the red accent, not surface texture. */
+  /* ash_white ground + faint warm wash. The brand carries through type and the
+     red accent, not surface texture. */
   background-color: #f7f7f2;
-  background-image:
-    radial-gradient(
-      ellipse 70% 30% at 50% 0%,
-      rgba(193, 18, 31, 0.04),
-      rgba(193, 18, 31, 0.01) 38%,
-      transparent 72%
-    ),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.06  0 0 0 0 0.06  0 0 0 0 0.06  0 0 0 0.03 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-attachment: fixed, fixed;
-  background-size: 100% 100%, 240px 240px;
-  background-repeat: no-repeat, repeat;
+  background-image: var(--wash-body);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
   color: #050505;
+}
+
+/* Fixed paper-grain overlay. Sits above the body wash; content stacks over it
+   via .z-content on each band. Should register as paper, not texture. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.06 0 0 0 0 0.06 0 0 0 0 0.06 0 0 0 0.028 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 220px 220px;
 }
 
 ::selection {
@@ -74,3 +101,30 @@ body {
 .animate-fade-up-delay-1 { animation-delay: 0.15s; }
 .animate-fade-up-delay-2 { animation-delay: 0.45s; }
 .animate-fade-up-delay-3 { animation-delay: 0.85s; }
+.animate-fade-up-delay-4 { animation-delay: 1.05s; }
+
+/* ===== Status-line pulse dot ===== */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.82); }
+}
+.pulse-dot {
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal,
+  .reveal-stagger > *,
+  .animate-fade-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+  .pulse-dot {
+    animation: none;
+  }
+}

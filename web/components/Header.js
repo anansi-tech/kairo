@@ -6,6 +6,7 @@ import Image from "next/image";
 const navLinks = [
   { label: "What you learn", href: "#what-you-learn" },
   { label: "Who it's for", href: "#who-its-for" },
+  { label: "Pricing", href: "#pricing" },
   { label: "About", href: "#about" },
 ];
 
@@ -38,28 +39,28 @@ export default function Header() {
           />
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden min-[1040px]:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="text-[12px] tracking-[0.1em] uppercase text-kairo-black/85 hover:text-kairo-red transition-colors"
+              className="whitespace-nowrap text-[12px] tracking-[0.1em] uppercase text-kairo-black/85 hover:text-kairo-red transition-colors"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#cta"
-            className="text-[12px] tracking-[0.1em] uppercase font-semibold px-5 py-2.5
+            className="whitespace-nowrap text-[12px] tracking-[0.1em] uppercase font-semibold px-5 py-2.5
                        bg-kairo-red text-kairo-cream rounded-sm
                        hover:bg-kairo-black transition-colors"
           >
-            Get notified
+            Reserve a seat
           </a>
         </nav>
 
         <button
-          className="md:hidden text-kairo-black text-xl p-1.5"
+          className="min-[1040px]:hidden text-kairo-black text-xl p-1.5"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -68,7 +69,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-kairo-cream/98 backdrop-blur-xl px-6 py-6 space-y-4 border-t border-kairo-black/10">
+        <div className="min-[1040px]:hidden bg-kairo-cream/98 backdrop-blur-xl px-6 py-6 space-y-4 border-t border-kairo-black/10">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -85,7 +86,7 @@ export default function Header() {
             className="block text-center text-sm uppercase tracking-widest py-3 rounded-sm
                        bg-kairo-red text-kairo-cream"
           >
-            Get notified
+            Reserve a seat
           </a>
         </div>
       )}
