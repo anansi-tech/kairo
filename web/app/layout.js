@@ -20,7 +20,7 @@ const body = DM_Sans({
 export const metadata = {
   title: "Kairo — Hands-on AI workshops for working professionals",
   description:
-    "A 2-day hands-on AI workshop taught by Dr. David Noel (Anansi founder, Senior Cybersecurity Engineer at American Express, CS adjunct at Nova Southeastern). Open your laptop, learn from a builder, leave with working tools in your real job.",
+    "A 2-day hands-on AI workshop in South Florida taught by Dr. David Noel (Anansi founder, Senior Cybersecurity Engineer at American Express, CS adjunct at Nova Southeastern). Open your laptop, learn from a builder, leave with working tools in your real job.",
   metadataBase: new URL("https://kairo.anansi.xyz"),
   icons: {
     icon: [

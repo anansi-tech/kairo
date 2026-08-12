@@ -30,9 +30,9 @@ export default function Home() {
             <span className="italic text-kairo-red">Start using it.</span>
           </h1>
           <p className="mt-8 text-[17px] sm:text-[19px] text-kairo-black/75 leading-[1.6] max-w-[680px] mx-auto animate-fade-up animate-fade-up-delay-2">
-            A 2-day hands-on workshop for working professionals. Open your laptop, learn from
-            someone who actually builds with AI, leave with working tools in your real job by Monday
-            morning.
+            A 2-day hands-on workshop for working professionals, Friday&ndash;Saturday &mdash; one
+            day of PTO, not two. Open your laptop, learn from someone who actually builds with AI,
+            leave with working tools in your real job by Monday morning.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animate-fade-up-delay-3">
             <a
@@ -41,7 +41,7 @@ export default function Home() {
                          text-[13px] tracking-[0.1em] uppercase font-semibold rounded-sm
                          hover:bg-kairo-black transition-colors min-w-[260px] justify-center"
             >
-              Get notified about the next cohort →
+              Reserve your seat — $500 refundable deposit →
             </a>
             <a
               href="#what-you-learn"
@@ -62,7 +62,8 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto reveal">
           <Eyebrow>What you learn</Eyebrow>
           <h2 className="font-display text-[clamp(32px,4.5vw,56px)] leading-[1.1] text-kairo-black max-w-[700px]">
-            Two days. <span className="italic text-kairo-red">Real tools, real work.</span>
+            Two days, Friday&ndash;Saturday.{" "}
+            <span className="italic text-kairo-red">Real tools, real work.</span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 mt-14">
@@ -174,23 +175,57 @@ export default function Home() {
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-kairo-cream/10 mt-14">
-            <Stat label="Duration" value="2 days" sub="intensive" />
+            <Stat label="Duration" value="2 days" sub="Friday–Saturday" />
             <Stat label="Cohort size" value="15" sub="seats max" />
-            <Stat label="Location" value="Miami" sub="venue at registration" />
-            <Stat label="Format" value="2-day intensive" sub="Miami in-person + virtual cohorts" />
+            <Stat label="Location" value="Fort Lauderdale" sub="founding cohort" />
+            <Stat label="Format" value="Fri–Sat" sub="one day of PTO, not two" />
           </div>
 
+          <p className="mt-6 text-[13px] tracking-[0.06em] uppercase text-kairo-cream/60 text-center">
+            Founding cohort: Fort Lauderdale &middot; Future cohorts: Miami &amp; virtual
+          </p>
+
           <div className="mt-10 md:mt-12 grid sm:grid-cols-3 gap-5 md:gap-6">
-            <PriceTile primary="$3,000" label="per seat · in-person" />
+            <PriceTile primary="$1,995" strike="$3,000 standard" label="founding cohort rate · in-person" />
             <PriceTile primary="$1,500" label="virtual · two 4-hr days, one week apart" />
             <PriceTile primary="from $30K" label="B2B engagements · private cohorts" />
           </div>
 
           <p className="mt-8 text-sm text-kairo-cream/70 max-w-[640px] mx-auto leading-[1.6] text-center">
-            Two-day virtual cohorts run as two 4-hour sessions one week apart — humane pacing that
-            protects momentum without consuming your week. Same curriculum as in-person, adapted for
-            remote delivery.
+            Founding cohort pricing in exchange for honest feedback and a testimonial. 15 seats.
           </p>
+          <p className="mt-3 text-sm text-kairo-cream/70 max-w-[640px] mx-auto leading-[1.6] text-center">
+            Most attendees expense this through their professional development budget — manager
+            justification letter provided.
+          </p>
+          <p className="mt-3 text-sm text-kairo-cream/70 max-w-[640px] mx-auto leading-[1.6] text-center">
+            In-person cohorts run Friday&ndash;Saturday — one day of PTO, not two. Virtual cohorts
+            run as two 4-hour sessions one week apart — humane pacing that protects momentum without
+            consuming your week. Same curriculum, adapted for remote delivery.
+          </p>
+        </div>
+      </section>
+
+      {/* ===== BRING IT TO YOUR MANAGER ===== */}
+      <section className="py-16 md:py-20 px-6 md:px-12 border-t border-kairo-black/10">
+        <div className="max-w-[760px] mx-auto text-center reveal">
+          <Eyebrow center>Bring it to your manager</Eyebrow>
+          <h2 className="font-display text-[clamp(28px,3.6vw,44px)] leading-[1.15] text-kairo-black">
+            Need sign-off? <span className="italic text-kairo-red">We wrote the letter.</span>
+          </h2>
+          <p className="mt-6 text-[16px] text-kairo-black/75 leading-[1.75] max-w-[620px] mx-auto">
+            Most attendees expense Kairo through their professional development budget. We&apos;ve
+            drafted a one-page justification letter that explains the format, the outcomes, and the
+            return in language your manager will recognize. Download it, add your name, and send it.
+          </p>
+          <a
+            href="/manager-letter.pdf"
+            className="mt-8 inline-flex items-center gap-2 px-7 py-3.5 border border-kairo-black/25
+                       text-[12px] tracking-[0.1em] uppercase font-semibold text-kairo-black rounded-sm
+                       hover:border-kairo-red hover:text-kairo-red transition-colors"
+          >
+            Download the manager letter (PDF) ↓
+          </a>
         </div>
       </section>
 
@@ -265,13 +300,13 @@ export default function Home() {
           }}
         />
         <div className="max-w-[760px] mx-auto text-center relative reveal">
-          <Eyebrow center>Next cohort</Eyebrow>
+          <Eyebrow center>Founding cohort</Eyebrow>
           <h2 className="font-display text-[clamp(32px,4.5vw,56px)] leading-[1.1] text-kairo-black">
-            Get notified when the next cohort opens.
+            Reserve your seat in the founding cohort.
           </h2>
           <p className="mt-6 text-[17px] text-kairo-black/75 leading-[1.7] max-w-[580px] mx-auto">
-            Cohorts are small and fill quickly. Add your email and we&apos;ll let you know when the
-            next one opens — usually 4-6 weeks before the workshop date.
+            Request a seat — we&apos;ll follow up within 24 hours with deposit details. A $500
+            refundable deposit holds your place. 15 seats.
           </p>
           <EmailCapture />
         </div>
@@ -336,7 +371,7 @@ function Stat({ label, value, sub }) {
   return (
     <div className="bg-kairo-black p-6 md:p-7">
       <p className="text-[10px] tracking-[0.18em] uppercase text-kairo-red/90 mb-3">{label}</p>
-      <p className="font-display text-[clamp(28px,3.4vw,40px)] leading-none text-kairo-cream">
+      <p className="font-display text-[clamp(22px,3.4vw,40px)] leading-none text-kairo-cream break-words">
         {value}
       </p>
       <p className="text-[11px] tracking-[0.1em] uppercase text-kairo-cream/55 mt-3">{sub}</p>
@@ -344,11 +379,16 @@ function Stat({ label, value, sub }) {
   );
 }
 
-function PriceTile({ primary, label }) {
+function PriceTile({ primary, strike, label }) {
   return (
     <div className="border border-kairo-cream/15 px-6 py-6 rounded-sm">
       <p className="font-display text-[28px] md:text-[32px] text-kairo-red leading-none">
         {primary}
+        {strike && (
+          <span className="ml-3 text-[16px] text-kairo-cream/40 line-through align-middle">
+            {strike}
+          </span>
+        )}
       </p>
       <p className="text-[12px] tracking-[0.08em] uppercase text-kairo-cream/70 mt-3">{label}</p>
     </div>
